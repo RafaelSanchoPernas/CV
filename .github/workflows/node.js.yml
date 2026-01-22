@@ -24,14 +24,16 @@ jobs:
         cache: 'npm'
 
     - run: npm ci
-
     - run: npm run build --if-present
 
-    # Git-Identität setzen (WICHTIG für gh-pages)
     - name: Configure Git
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
+
+    - name: Configure Git Remote with Token
+      run: |
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
     # Deploy nur einmal (Node 20)
     - name: Deploy to GitHub Pages
@@ -39,3 +41,4 @@ jobs:
       run: npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
