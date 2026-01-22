@@ -1,0 +1,50 @@
+{
+  "personal": {
+    "name": "Rafael Sancho",
+    "address": "Calw",
+    "phone": "+49 170 1234567",
+    "email": "rafael.sancho@email.de",
+    "github": "https://github.com/rafaelsancho",
+    "image": "https://via.placeholder.com/200"
+  },
+  "experience": [
+    {
+      "period": "10/2025 – Heute",
+      "position": "Full-stack Developer",
+      "company": "Rolf Benz AG & Co. KG",
+      "tasks": [
+        "Entwicklung interner Webtools",
+        "Verwaltung von Datenbanken",
+        "Automatisierung von Prozessen"
+      ]
+    },
+    {
+      "period": "10/2022 – 09/2025",
+      "position": "Dualer IT-Student",
+      "company": "Rolf Benz AG & Co. KG",
+      "tasks": [
+        "Entwicklung interner Webtools",
+        "Netzwerk- und Serveradministration"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "period": "09/2022 – 09/2025",
+      "degree": "Bachelor of Science, Informatik",
+      "school": "DHBW Stuttgart"
+    },
+    {
+      "period": "09/2019 – 07/2022",
+      "degree": "Abitur, Wirtschaftsgymnasium",
+      "school": "Hermann-Gundert Schule Calw"
+    }
+  ],
+  "skills": {
+    "Programmieren": ["JavaScript", "Python", "Java", "C"],
+    "Frameworks": ["React", "Flask", "SpringBoot"],
+    "Datenbanken": ["SQL", "noSQL"],
+    "Tools": ["Git", "Linux", "Apache2"],
+    "Sprachen": ["Deutsch (Muttersprache)", "Englisch (gut)", "Spanisch (gut)"]
+  }
+}
