@@ -27,11 +27,15 @@ jobs:
 
     - run: npm run build --if-present
 
+    # Git-Identität setzen (WICHTIG für gh-pages)
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+
     # Deploy nur einmal (Node 20)
     - name: Deploy to GitHub Pages
       if: github.ref == 'refs/heads/main' && matrix.node-version == '20.x'
       run: npm run deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
